@@ -1,0 +1,66 @@
+html, body {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://www.transit.dot.gov/sites/fta.dot.gov/files/635847974891062780-425303270_news.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    box-shadow: 0 8px 6px -8px black;
+    color: ivory;
+    font-weight: bold;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.options {
+    display: flex;
+    margin: auto 0;
+}
+
+.tab {
+    padding: 20px 10px;
+    border-radius: 5%;
+    width: 100px;
+    text-align: center;
+}
+
+.tab:hover {
+    background-color: #97CDFF;
+    cursor: pointer;
+}
+
+.logo {
+    margin: auto 0;
+    font-size: 20px;
+}
+
+.container {
+    position: relative;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 80px 0;
+    z-index: 0;
+}
+
+.card {
+    margin: 30px 0;
+}
+
+.card-footer a {
+    color: #007EE5;
+}
