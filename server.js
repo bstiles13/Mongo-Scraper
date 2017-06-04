@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 var Article = require('./models/Article.js');
 
-mongoose.connect("mongodb://localhost/articles_db");
+mongoose.connect("mongodb://heroku_0dw6n89v:mv3tpm5ujvihftkspkvgdmpk46@ds163721.mlab.com:63721/heroku_0dw6n89v");
 var db = mongoose.connection;
 
 db.on("error", function(error) {
