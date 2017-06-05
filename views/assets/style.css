@@ -69,8 +69,8 @@ body {
 
 .card {
     margin: 20px;
-    width: 20%;
-    border-radius: 5%;
+    width: 15%;
+    border-radius: 2%;
     overflow: hidden;
 }
 
