@@ -6,6 +6,7 @@ var request = require('request');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
+var port = process.env.PORT || 3000;
 var app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -113,6 +114,6 @@ app.post('/comments/:id', function(req, res) {
 });
 })
 
-app.listen(3000, function() {
+app.listen(port, function() {
     console.log('Server connected on port 3000');
 })
