@@ -14,8 +14,9 @@ var ArticleSchema = new Schema({
     text: {
         type: String
     },
-    comments: [{
-        type: String
+    reviews: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Review'
     }],
     favorite: {
         type: Boolean,

@@ -1,4 +1,6 @@
 <div class='main-content'>
+    <div class='page-title'>FAVORITES</div>
+
     {{#each Article}}
         <div class="card">
             <div class="card-image">
@@ -18,7 +20,7 @@
             </div>
             <footer class="card-footer">
                 <a class="remove card-footer-item" remove-id="{{this._id}}">Remove</a>
-                <a class="comments card-footer-item" data-id="{{this._id}}">Comments</a>
+                <a class="reviews card-footer-item" data-id="{{this._id}}">Review</a>
             </footer>
         </div>
     {{/each}}
@@ -29,16 +31,16 @@
   <div class="modal-background"></div>
   <div class="modal-card">
     <header class="modal-card-head">
-      <p class="modal-card-title">Comments</p>
+      <p class="modal-card-title">Reviews</p>
       <button class="cancel delete"></button>
     </header>
     <section class="modal-card-body">
         <div class='history'></div>
-        <br><span>Add Comment:</span>
-      <textarea class='new-comment' type='text' placeholder='Your comment'></textarea>
+        <br><span>Add Review:</span>
+      <textarea class='new-review' type='text' placeholder='Your review'></textarea>
     </section>
     <footer class="modal-card-foot">
-      <a class="save button is-success">Save Comment</a>
+      <a class="save button is-success">Save Review</a>
       <a class="cancel button">Cancel</a>
     </footer>
   </div>
