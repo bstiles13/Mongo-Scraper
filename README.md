@@ -1,3 +1,5 @@
+# Mongo-Scraper
+
 An app that lets users leave comments on the latest news from BBC Earth. Mongoose and Cheerio are used to scrape and display news from BBC.
 
 Flow:
